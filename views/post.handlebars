@@ -3,7 +3,7 @@
     <div class="col-md-12">
       <h2>{{{get_emoji}}} {{post.title}}</h2>
       <p>{{post.body}}</p>
-      <p>Created by {{post.user.username}} on {{format_date post.date_created}}</p>
+      <p><i>Published by {{post.user.username}} on {{format_date post.date_created}}</i></p>
     </div>
   </div>
   
@@ -14,7 +14,7 @@
           {{comment.body}}
       </p>
       <p>
-        By {{comment.user.username}} on {{format_date comment.date_created}}
+        <i>By {{comment.user.username}} on {{format_date comment.date_created}}</i>
       </p>
     </div>
   </div>

@@ -1,0 +1,32 @@
+<div class="row mb-12">
+  <div class="col-md-12">
+    <h2>Welcome, {{user.username}}!</h2>
+  </div>
+</div>
+
+<div class="row mb-12 project">
+    {{#each user.posts as |post|}}
+      <div class="col-md-12">
+        <h4><a href="/" post-id="{{post.id}}">{{post.title}}</a></h4>
+        <p>{{post.body}} <i>Published on {{format_date post.date_created}}</i></p>
+      </div>
+    {{/each}}
+</div>
+
+<div class="row mb-4">
+  <div class="col-md-12">
+    <h3>New Post</h3>
+    <p>
+      <h5>Title:</h5>
+      <textarea name="title" id="post-title" cols="150" rows="1"></textarea>
+    </p>
+    <p>
+      <h5>Body:</h5>
+      <textarea name="body" id="post-body" cols="150" rows="3"></textarea>
+    </p>
+    <button class="btn btn-primary" id="post-btn">Submit</button>
+  </div>
+</div>
+
+
+<script src="./js/post.js"></script>

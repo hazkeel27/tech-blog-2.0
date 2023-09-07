@@ -3,7 +3,7 @@ const { Post, User, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // create post based on req.session.user_id
-router.post('/:id', async (req, res) => {
+router.post('/', async (req, res) => {
     try {
         const today = new Date();
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -12,7 +12,7 @@ router.post('/:id', async (req, res) => {
             title: req.body.title,
             body: req.body.body,
             date_created: formattedDate,
-            user_id: req.params.id,
+            user_id: req.session.user_id,
         });
         res.status(200).json(postData);
     } catch (err) {
