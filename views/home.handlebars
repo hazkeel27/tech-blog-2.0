@@ -5,8 +5,8 @@
     <h2>
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
       {{{get_emoji}}}
-      <a href="/{{post.id}}">{{post.title}}</a>
-    </h2>
+      <a href="/{{post.id}}">{{post.title}}</a></h2> 
+      <p><i>- Published on {{format_date post.date_created}}</i></p>
   </div>
 </div>
 {{/each}}

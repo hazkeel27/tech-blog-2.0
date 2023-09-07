@@ -64,7 +64,7 @@ npm install prettier@2.1.2
 
 Following is a video demonstrating how to run the application in the terminal. 🎥
 
-[![Video Demo]()]()
+[![Video Demo](https://drive.google.com/file/d/1T_v1RHtMZc6BKIroheJJ1suqVkNPfy0v/view)](https://drive.google.com/file/d/1T_v1RHtMZc6BKIroheJJ1suqVkNPfy0v/view)
 
 ## <a name="contributing"></a>Contribution 🤝
 
