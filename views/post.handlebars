@@ -6,15 +6,12 @@
       <p><i>Published by {{post.user.username}} on {{format_date post.date_created}}</i></p>
     </div>
   </div>
-  
+  <h4>Comments: </h4>
  {{#each post.comments as |comment| }}
-  <div class="row mb-4 project">
+  <div class="row mb-4">
     <div class="col-md-12">
       <p>
-          {{comment.body}}
-      </p>
-      <p>
-        <i>By {{comment.user.username}} on {{format_date comment.date_created}}</i>
+          {{comment.body}} <i>- By {{comment.user.username}} on {{format_date comment.date_created}}</i>
       </p>
     </div>
   </div>

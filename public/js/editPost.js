@@ -27,12 +27,12 @@ const deletePostHandler = async (event) => {
   if (event.target.hasAttribute('delete-post')) {
     const id = event.target.getAttribute('delete-post');
 
-    const response = await fetch(`/api/posts/${id}`, {
+    const response = await fetch(`/api/post/${id}`, {
       method: 'DELETE',
     });
 
     if (response.ok) {
-      document.location.replace('/');
+      document.location.replace('/dashboard');
     } else {
       alert('Failed to delete project');
     }
