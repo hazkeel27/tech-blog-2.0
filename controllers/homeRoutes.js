@@ -35,24 +35,28 @@ router.get('/dashboard', withAuth, async (req, res) => {
             logged_in: req.session.logged_in,
           });
     } catch (err) {
-        res.status(500).json(`Error getting route /dashboard/${req.params.id}: ${err}`);
+        res.status(500).json(`Error getting route /dashboard: ${err}`);
     }
 });
 
-router.get('/editPost', async (req, res) => {
+router.get('/editPost/:id', async (req, res) => {
     try {
         const postData = await Post.findOne({
             where: {
-                user_id: req.session.user_id, // get post based on req.session.user_id
+                id: req.params.id, // get post based on post id
             }
         }); 
         if (!postData) {
             return res.status(404).json({ message: 'Post not found' });
         }
         const post = postData.get({ plain: true });
-        res.status(200).json(post);
+        //res.status(200).json(post);
+        res.render('editPost', { 
+            post, 
+            logged_in: req.session.logged_in,
+        });
     } catch (err) {
-        res.status(500).json(`Error getting route /dashboard/post/${req.params.id}: ${err}`);
+        res.status(500).json(`Error getting route /editPost/${req.params.id}: ${err}`);
     }
 });
 
@@ -99,7 +103,7 @@ router.get('/:id', withAuth, async (req, res) => {
             logged_in: req.session.logged_in,
           });
     } catch (err) {
-      res.status(500).json(`Error getting route /home/post/${req.params.id}: ${err}`);
+      res.status(500).json(`Error getting route /${req.params.id}: ${err}`);
     }
 });
 

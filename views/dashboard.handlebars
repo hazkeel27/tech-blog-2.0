@@ -7,7 +7,7 @@
 <div class="row mb-12 project">
     {{#each user.posts as |post|}}
       <div class="col-md-12">
-        <h4><a href="/" post-id="{{post.id}}">{{post.title}}</a></h4>
+        <h4><a href="/editPost/{{post.id}}">{{post.title}}</a></h4>
         <p>{{post.body}} <i>Published on {{format_date post.date_created}}</i></p>
       </div>
     {{/each}}

@@ -1,0 +1,17 @@
+<div class="row mb-4">
+  <div class="col-md-12">
+    <h3>Update Post</h3>
+    <p>
+      <h5>Title:</h5>
+      <textarea name="title" id="update-post-title" cols="150" rows="1">{{post.title}}</textarea>
+    </p>
+    <p>
+      <h5>Body:</h5>
+      <textarea name="body" id="update-post-body" cols="150" rows="3">{{post.body}}</textarea>
+    </p>
+    <button class="btn btn-primary" id="update-post-btn" update-post="{{post.id}}">Update</button>
+    <button class="btn btn-danger" id="delete-post-btn" delete-post="{{post.id}}">Delete</button>
+  </div>
+</div>
+
+  <script src="../js/editPost.js"></script>
