@@ -1,4 +1,5 @@
 # tech-blog-2.0 📝
+
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description 📄
@@ -21,14 +22,14 @@ Overall, this full-stack tech blog application provides a comprehensive platform
 
 ## Table of Contents
 
-* [Installation](#installation) 🛠️
-* [Usage](#usage) 📘
-* [Contributing](#contributing) 🤝
-* [Tests](#tests) 🧪
-* [License](#license) 📜
-* [Credits](#credits) 🙏
-* [Questions](#questions) ❓
-* [Deployed Application](#link) 🚀
+- [Installation](#installation) 🛠️
+- [Usage](#usage) 📘
+- [Contributing](#contributing) 🤝
+- [Tests](#tests) 🧪
+- [License](#license) 📜
+- [Credits](#credits) 🙏
+- [Questions](#questions) ❓
+- [Deployed Application](#link) 🚀
 
 ## <a name="installation"></a>Installation 🛠️
 
@@ -48,6 +49,7 @@ npm install mysql2@2.2.5
 ```
 
 Install DevDependency for developing purposes:
+
 ```
 npm install nodemon@2.0.3
 npm install eslint@7.12.1
@@ -64,7 +66,7 @@ npm install prettier@2.1.2
 
 Following is a video demonstrating how to run the application in the terminal. 🎥
 
-[![Video Demo](https://drive.google.com/file/d/1T_v1RHtMZc6BKIroheJJ1suqVkNPfy0v/view)](https://drive.google.com/file/d/1T_v1RHtMZc6BKIroheJJ1suqVkNPfy0v/view)
+[![Video Demo](./images/tech-blog-screen-shot.png)](https://drive.google.com/file/d/1T_v1RHtMZc6BKIroheJJ1suqVkNPfy0v/view)
 
 ## <a name="contributing"></a>Contribution 🤝
 
@@ -97,7 +99,6 @@ Following are the documents I used to help me write code:
 - [MDN Web Docs on MVC](https://developer.mozilla.org/en-US/docs/Glossary/MVC)
 - [express-session Official Readme](https://github.com/expressjs/session#cookie)
 - [Express.js documentation on using middleware](https://expressjs.com/en/guide/using-middleware.html)
-
 
 ## <a name="questions"></a>Questions ❓
 
