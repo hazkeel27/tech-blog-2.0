@@ -60,11 +60,11 @@ npm install prettier@2.1.2
 ## <a name="usage"></a>Usage 📘
 
 - Access the web application by clicking on the link.
-- Create an account by clicking the signup option from top right.
-- Homepage shows users all blog posts. Users can click on a blog post to read it, as well as read/write comments.
-- Dashboard shows users posts created using their account. Users can create new posts from the bottom of the page, or edit/delete the existing posts.
+- Create an account by clicking the signup option from the top right.
+The homepage shows users all blog posts. Users can click on a blog post to read it, as well as read/write comments.
+- Dashboard shows users' posts created using their account. Users can create new posts from the bottom of the page, or edit/delete the existing posts.
 
-Following is a video demonstrating how to run the application in the terminal. 🎥
+Following is a video demonstrating how to run the application. 🎥
 
 [![Video Demo](./images/tech-blog-screen-shot.png)](https://drive.google.com/file/d/1T_v1RHtMZc6BKIroheJJ1suqVkNPfy0v/view)
 
